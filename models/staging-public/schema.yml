@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+    - name: sales_transformation
+      description: "Transformed sales data"
+      config:
+        materialized: table
+        alias: sales_rpt
+      columns:
+          - name: sale_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+      
+
