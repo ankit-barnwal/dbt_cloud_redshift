@@ -1,0 +1,10 @@
+
+version: 2
+
+sources:
+  - name: staging
+    description: Gets data from redshift staging layer
+    database: staging
+    schema: public
+    tables:
+      - name: sales
